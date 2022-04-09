@@ -14,10 +14,21 @@ const TodoItem = ({ todo, setRefresh }) => {
     });
   };
 
+  const deleteTodo = () => {
+    fetch('http://localhost:8000/todos/' + todo.id, {
+      method: 'DELETE',
+    }).then(() => {
+      console.log('Todo deleted successfully!');
+      setRefresh(true);
+    });
+  };
+
   return (
     <li className={`${todo.done ? 'checked' : ''}`}>
       <div onClick={updateTodo}>{todo.title}</div>
-      <span className="close">&times;</span>
+      <span className="close" onClick={deleteTodo}>
+        &times;
+      </span>
     </li>
   );
 };
