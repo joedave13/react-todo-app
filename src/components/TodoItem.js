@@ -1,7 +1,7 @@
-const TodoItem = () => {
+const TodoItem = ({ todo }) => {
   return (
-    <li>
-      Create a project <span className="close">&times;</span>
+    <li className={`${todo.done ? 'checked' : ''}`}>
+      {todo.title} <span className="close">&times;</span>
     </li>
   );
 };
