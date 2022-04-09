@@ -1,14 +1,24 @@
 {
-    "todos": [
-        {
-            "id": 1,
-            "title": "Create a project",
-            "done": false
-        },
-        {
-            "id": 2,
-            "title": "Design UI app",
-            "done": true
-        }
-    ]
+  "todos": [
+    {
+      "id": 1,
+      "title": "Create a project",
+      "done": false
+    },
+    {
+      "id": 2,
+      "title": "Design UI app",
+      "done": true
+    },
+    {
+      "title": "Design database",
+      "done": false,
+      "id": 3
+    },
+    {
+      "title": "Create migration",
+      "done": false,
+      "id": 4
+    }
+  ]
 }
