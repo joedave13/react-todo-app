@@ -1,0 +1,14 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "title": "Create a project",
+            "done": false
+        },
+        {
+            "id": 2,
+            "title": "Design UI app",
+            "done": true
+        }
+    ]
+}
